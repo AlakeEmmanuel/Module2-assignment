@@ -1,0 +1,87 @@
+*{
+	box-sizing: border-box;
+}
+h1{
+	margin: 45px auto;
+	text-align:center;
+}
+section{
+	border-left: 1px black solid;
+	border-bottom: 1px black solid;
+	width: 120px;
+	text-align: center;
+	background-color: grey;
+	color:black;
+	float: right;
+}
+p{
+	clear: both;
+}
+/* for large devices*/
+@media (min-width: 992px){
+	div.one{
+		width: 33%;
+		border:1px black solid;
+		margin:2px;
+		padding: 0px 0px 2px 2px;
+	}
+	div.two{
+		width: 33%;
+		border:1px black solid;
+		margin: auto;
+		padding: 0px 0px 2px 2px;
+	}
+	div.three{
+		width: 33%;
+		border:1px black solid;
+		margin: 2px;
+		padding: 0px 0px 2px 2px;
+	}
+}
+
+/*for medium devices*/
+@media (min-width: 768px) and (max-width: 991px){
+	div.one{
+		max-width: 356px;
+		border:1px black solid;
+		padding: 0px 0px 2px 2px;
+		margin-right:4px;
+	}
+	div.two{
+		max-width: 356px;
+		border:1px black solid;
+		padding: 0px 0px 2px 2px;
+		margin-left: 4px;
+	}
+	div.three{
+		width: 100%;
+		border:1px black solid;
+		padding: 0px 0px 2px 2px;
+		margin-top: 4px;
+	}
+}
+
+/*for small devices*/
+@media (max-width: 767px){
+	div.one{
+		width: 100%;
+		border:1px black solid;
+		padding: 0px 0px 2px 2px;
+
+	}
+	div.two{
+		width: 100%;
+		border:1px black solid;
+		margin-top:4px;
+		padding: 0px 0px 2px 2px;
+
+	}
+
+	div.three{
+		width: 100%;
+		border:1px black solid;
+		margin-top: 4px;
+		padding: 0px 0px 2px 2px;
+
+	}
+}
