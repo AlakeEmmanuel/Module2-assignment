@@ -5,87 +5,103 @@
 	<meta http-equiv="X-UA-compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Assignment solution for module 2</title>
-
-	<style>
+	<style type="text/css">
 		*{
 	box-sizing: border-box;
 }
 h1{
 	margin: 45px auto;
 	text-align:center;
-	color:maroon;
 }
 section{
+	width:30%;
 	border-left: 1px black solid;
 	border-bottom: 1px black solid;
-	width: 120px;
 	text-align: center;
 	background-color: grey;
-	color:black;
+	color:white;
 	float: right;
 }
 p{
 	clear: both;
 }
+.one>section{
+	background-color: maroon;
+}
+.two>section{
+	background-color: lightgreen;
+}
+.three>section{
+	background-color: black;
+}
+.row{
+	width: 100%;
+}
+div.one,div.two,div.three{
+	background-color: grey;
+}
+
 /* for large devices*/
 @media (min-width: 992px){
-	one{
+	div.one{
 		width: 33%;
 		border:1px black solid;
-		margin:2px;
+		margin:1px;
 		padding: 0px 0px 2px 2px;
-		float:left;
+		float: left;
+		
 	}
-	.two{
+	div.two{
 		width: 33%;
 		border:1px black solid;
-		margin: auto;
+		margin: 1px;
 		padding: 0px 0px 2px 2px;
-		float:left;
+		float: left;
 	}
-	.three{
+	div.three{
 		width: 33%;
 		border:1px black solid;
-		margin: 2px;
+		margin: 1px;
 		padding: 0px 0px 2px 2px;
-		clear:both;
+		float: left;
 	}
 }
 
 /*for medium devices*/
 @media (min-width: 768px) and (max-width: 991px){
-	.one{
-		max-width: 50%;
+	div.one{
+		max-width: 49%;
 		border:1px black solid;
 		padding: 0px 0px 2px 2px;
-		margin-right:4px;
-		float:left;
+		margin-right:7px;
+		float: left;
 	}
-	.two{
-		max-width: 50%;
+	div.two{
+		max-width: 49%;
 		border:1px black solid;
 		padding: 0px 0px 2px 2px;
-		margin-left: 4px;
-		float:right;
+		margin-left: 7px;
+		margin-bottom: 14px;
+		float: left;
 	}
-	.three{
+	div.three{
 		width: 100%;
 		border:1px black solid;
 		padding: 0px 0px 2px 2px;
-		margin-top: 4px;
-		clear:both;
+		margin-top: 6px;
+		clear: left;
 	}
 }
 
 /*for small devices*/
 @media (max-width: 767px){
-	.one{
+	div.one{
 		width: 100%;
 		border:1px black solid;
 		padding: 0px 0px 2px 2px;
 
 	}
-	.two{
+	div.two{
 		width: 100%;
 		border:1px black solid;
 		margin-top:4px;
@@ -93,7 +109,7 @@ p{
 
 	}
 
-	.three{
+	div.three{
 		width: 100%;
 		border:1px black solid;
 		margin-top: 4px;
@@ -102,7 +118,8 @@ p{
 	}
 }
 	</style>
-	</head>
+	
+</head>
 <body>
 <h1> Our Menu</h1>
 <div class="container">
